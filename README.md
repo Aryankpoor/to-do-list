@@ -80,10 +80,13 @@ Here, ShoppingList is a React component class, or React component type. A compon
 
 The render method returns a description of what you want to see on the screen. React takes the description and displays the result. In particular, render returns a React element, which is a lightweight description of what to render. Most React developers use a special syntax called “JSX” which makes these structures easier to write. The <div /> syntax is transformed at build time to React.createElement('div'). The example above is equivalent to:
 
+```
 return React.createElement('div', {className: 'shopping-list'},
   React.createElement('h1', /* ... h1 children ... */),
   React.createElement('ul', /* ... ul children ... */)
 );
+
+```
 See full expanded version.
 
 If you’re curious, createElement() is described in more detail in the API reference, but we won’t be using it in this tutorial. Instead, we will keep using JSX.
