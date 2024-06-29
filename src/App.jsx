@@ -52,6 +52,7 @@ export default function App() {
 
   <h1 className='header'>To do list</h1>
   <ul className='list'>
+  {todos.length === 0 && <li>No items</li>}
      {todos.map(todo => {
       return <><li key={todo.id}>
       <label>
