@@ -42,6 +42,7 @@ export default function App() {
   <form onSubmit={handleSubmit} className='new-item-form'>
 
     <div className="form-row">
+    <h1 className='header'>SLUGGER</h1>
       <label htmlFor='item'>New Item</label>
       <input value={newItem} onChange={e => setNewItem(e.target.value)} type="text" id="item"/>
     </div>
@@ -50,7 +51,7 @@ export default function App() {
 
   </form>
 
-  <h1 className='header'>To do list</h1>
+  <h2 className='header'>To do list</h2>
   <ul className='list'>
   {todos.length === 0 && <li>No items</li>}
      {todos.map(todo => {
